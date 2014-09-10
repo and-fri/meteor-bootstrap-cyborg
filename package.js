@@ -1,8 +1,11 @@
 Package.describe({
-  summary: "Provides bootstrap with cyborg theme."
+  summary: "Provides bootstrap with cyborg theme.",
+  version: "0.0.2",
+  git: "https://github.com/andruschka/meteor-bootstrap-cyborg.git"
 });
 
 Package.on_use(function (api) {
+  api.versionsFrom("METEOR@0.9.0");
   api.use('jquery');
 
   var path = Npm.require('path');
